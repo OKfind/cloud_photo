@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "clean": "node -e \"const fs=require('fs'); for (const dir of ['.next','.open-next']) fs.rmSync(dir,{recursive:true,force:true});\"",
-    "build": "npm run clean && next build --webpack",
+    "build": "next build --webpack",
     "preview": "npm run clean && opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "npm run clean && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
     "upload": "npm run clean && opennextjs-cloudflare build && opennextjs-cloudflare upload",
